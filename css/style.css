@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: #F5E9DC;
+    color: #2B1D18;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: #2B1D18;
+    color: #F5E9DC;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a{
+    color: #F5E9DC;
+}
+
+nav a:hover{
+    color: #ffff;
+}
+
+#inicio{
+    text-align: center;
+    background-color: aqua;
+    /* color: #fff; */
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../img/img-capa1.png);
+
+    background-size: cover;
+    background-position: center;
+}
+
+#title-catalogo{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2rem;
+}
+
+#cont-catalogo{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+.catalogo{
+    flex-wrap: wrap;
+    overflow: hidden;
+    border-radius: 7px;
+    background-color: #fff;
+    transition: 2s;
+    box-shadow: 0 5px 15px rgb(176, 172, 172);
+}
+
+.catalogo:hover{
+    transform: translatey(-5px);
+}
+
+.image{
+    display: flex;
+    min-width: 250px;
+    background-color: #2B1D18;
+    height: 250px;
+}
+
+.image img{
+    min-width: 250px;
+}
+
+.catalogo h3, p{
+    margin: 7px 15px;
+    font-size: 1.2rem;
+}
+
+.preco{
+    color: red;
+    font-weight: bold;
+}
+
+
+footer{
+    background-color: #ffff;
+}
