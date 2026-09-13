@@ -35,15 +35,27 @@ nav a:hover{
 #inicio{
     text-align: center;
     background-color: aqua;
-    /* color: #fff; */
-    height: 500px;
+    height: 575px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-image: url(../img/img-capa1.png);
-
     background-size: cover;
     background-position: center;
+    padding: 0 120px;
+}
+
+#inicio h1,
+#inicio h3,
+#inicio p{
+    display: flex;
+    margin-bottom: 55px;
+    color: #41052a;
+    font-size: 2.9rem;
+}
+
+#inicio p{
+    margin:0 -2px;
 }
 
 #title-catalogo{
@@ -75,13 +87,13 @@ nav a:hover{
 
 .image{
     display: flex;
-    min-width: 250px;
+    min-width: 260px;
     background-color: #2B1D18;
     height: 250px;
 }
 
 .image img{
-    min-width: 250px;
+    min-width: 260px;
 }
 
 .catalogo h3, p{
@@ -97,4 +109,17 @@ nav a:hover{
 
 footer{
     background-color: #ffff;
+}
+
+@media (max-width: 780px) {
+    #inicio{
+        padding: 0 20px;
+    }
+
+    #inicio h1,
+    #inicio h3,
+    #inicio p{
+        max-width: 300px;
+        font-size: 1.5rem;
+    }
 }
