@@ -3,17 +3,24 @@ const btnVerCardapio = document.querySelector("#ver_cardapio");
 const catalogo = document.querySelector("#catalogo")
 const catlogoNav = document.querySelector("#catalogo_nav")
 
-function mostrarCatalogo() {
+function alterarCatalogo() {
+    if (catalogo.style.display === "none"){
         catalogo.style.display = "block";
+        btnVerCardapio.textContent = "Fechar Catálogo"
+    } else {
+        catalogo.style.display = "none";
+        btnVerCardapio.textContent = "Ver Catálogo"
+    }
 }
 
 btnVerCardapio.addEventListener ("click",() => {
-    mostrarCatalogo();
+    alterarCatalogo()
 
 });
 
 catlogoNav.addEventListener ("click", () => {
-    mostrarCatalogo();
+    // mostrarCatalogo();
+    alterarCatalogo()
 });
 
 // para direcionar para whatsapp
