@@ -49,7 +49,7 @@ nav a:hover{
 #inicio h3,
 #inicio p{
     display: flex;
-    margin-bottom: 55px;
+    margin-bottom: 4rem;
     color: #41052a;
     font-size: 2.9rem;
 }
@@ -57,6 +57,28 @@ nav a:hover{
 #inicio p{
     margin:0 -2px;
 }
+
+#inicio a{
+    /* display: flex; */
+    color: #F5E9DC;
+    background-color: #2B1D18;
+    max-width: 13rem;
+    font-size: 2.4rem;
+    margin-top: 2.2rem;
+    border-radius: .6rem;
+    padding: .5rem;
+    transition: 1s;
+    box-shadow: 0 5px 10px rgb(112, 109, 109);
+}
+
+#inicio a:hover{
+    background-color: #2b1d18a9;
+    color: #fff;
+}
+
+/* #catalogo{
+    display: none;
+} */
 
 #title-catalogo{
     text-align: center;
@@ -109,6 +131,7 @@ nav a:hover{
 
 footer{
     background-color: #ffff;
+    padding: 2.5rem 0;
 }
 
 @media (max-width: 800px) {
@@ -121,5 +144,20 @@ footer{
     #inicio p{
         max-width: 300px;
         font-size: 1.5rem;
+    }
+
+    #inicio a{
+        font-size: 1.5rem;
+        padding: .4rem;
+        max-width: 9rem;
+    }
+
+    .image{
+        min-width: 290px;
+        height: 260px;
+    }
+
+    .image img{
+        min-width: 290px;
     }
 }
