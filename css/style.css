@@ -16,6 +16,8 @@ header{
     padding: 20px 30px;
     background-color: #2B1D18;
     color: #F5E9DC;
+    /* ultima */
+    border-color: #2B1D18;
 }
 
 nav{
@@ -114,6 +116,9 @@ nav a:hover{
     min-width: 260px;
     background-color: #2B1D18;
     height: 250px;
+
+    /* ultimo */
+    border-color: #2B1D18;
 }
 
 .image img{
@@ -157,6 +162,10 @@ footer{
         font-size: 1.5rem;
         padding: .4rem;
         max-width: 9rem;
+    }
+
+    #cont-catalogo{
+        gap: 65px;
     }
 
     .image{
