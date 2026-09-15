@@ -1,26 +1,19 @@
-// para mostrar o cardápio quando o botão for clicado
-const btnVerCardapio = document.querySelector("#ver_cardapio");
-const catalogo = document.querySelector("#catalogo")
-const catlogoNav = document.querySelector("#catalogo_nav")
+const yearElement = document.getElementById("year");
 
-function alterarCatalogo() {
-    if (catalogo.style.display === "none"){
-        catalogo.style.display = "block";
-        btnVerCardapio.textContent = "Fechar Catálogo"
-    } else {
-        catalogo.style.display = "none";
-        btnVerCardapio.textContent = "Ver Catálogo"
-    }
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
 }
 
-btnVerCardapio.addEventListener ("click",() => {
-    alterarCatalogo()
+const links = document.querySelectorAll('a[href^="#"]');
 
+links.forEach((link) => {
+    link.addEventListener("click", (event) => {
+        const targetId = link.getAttribute("href");
+        const targetSection = document.querySelector(targetId);
+
+        if (!targetSection) return;
+
+        event.preventDefault();
+        targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
 });
-
-catlogoNav.addEventListener ("click", () => {
-    // mostrarCatalogo();
-    alterarCatalogo()
-});
-
-// para direcionar para whatsapp
