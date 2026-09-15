@@ -22,6 +22,8 @@ nav{
     display: flex;
     gap: 20px;
     align-items: center;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 nav a{
@@ -58,17 +60,18 @@ nav a:hover{
     margin:0 -2px;
 }
 
-#inicio a{
+#ver_cardapio{
     /* display: flex; */
     color: #F5E9DC;
     background-color: #2B1D18;
-    max-width: 13rem;
-    font-size: 2.4rem;
+    max-width: 14rem;
+    font-size: 2.3rem;
     margin-top: 2.2rem;
     border-radius: .6rem;
-    padding: .5rem;
+    padding: .6rem;
     transition: 1s;
     box-shadow: 0 5px 10px rgb(112, 109, 109);
+    font-weight: bold;
 }
 
 #inicio a:hover{
@@ -76,9 +79,9 @@ nav a:hover{
     color: #fff;
 }
 
-/* #catalogo{
+#catalogo{
     display: none;
-} */
+}
 
 #title-catalogo{
     text-align: center;
@@ -135,6 +138,11 @@ footer{
 }
 
 @media (max-width: 800px) {
+    nav{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
     #inicio{
         padding: 0 20px;
     }
